@@ -1,0 +1,32 @@
+{
+    "id": "637F3260",
+    "path": "~/OneDrive/Desktop/productive-r-workflow/R/analysis.qmd",
+    "project_path": "R/analysis.qmd",
+    "type": "quarto_markdown",
+    "hash": "304709861",
+    "contents": "",
+    "dirty": false,
+    "created": 1757754900026.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "cursorPosition": "10,0",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "486:231"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1757755944,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1757755944877,
+    "read_only": false,
+    "read_only_alternatives": []
+}

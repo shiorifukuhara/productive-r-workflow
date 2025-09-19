@@ -1,0 +1,49 @@
+---
+title: "Penguin Analysis"
+format: html
+editor: visual
+---
+
+## Penguin Analysis
+
+To analyse the relationship between the bill length and bill depth of the penguins that live in three different islands, I made a scatterplot that plots two of the variables with color verification of three types of species.
+
+```{r}
+
+library(tidyverse)
+
+# Source functions
+source(file="C:/Users/shior/OneDrive/Desktop/productive-r-workflow/R/functions.R")
+
+# Read the clean dataset
+data <- readRDS(file = "R/01_load_clean_data.R")
+
+# plot function
+create_scatterplot <- function(data, selected_species, selected_island) {
+  # Filter the data for the specified species and island
+  filtered_data <- data %>%
+    na.omit() %>%
+    filter(species == selected_species, island == selected_island)
+  
+  # Create the scatterplot
+  plot <- ggplot(
+    filtered_data,
+    aes(x = bill_length_mm, y = bill_depth_mm, color = species, shape = species)
+  ) +
+    geom_point() +
+    labs(
+      x = "Bill Length (mm)",
+      y = "Bill Depth (mm)",
+      title = paste("Penguin Bill Dimensions -", selected_species, "-", selected_island)
+    )
+  
+  return(plot)
+}
+
+# Use the function
+create_scatterplot(data, "Adelie", "Torgersen")
+```
+
+```{r}
+#| echo: false
+```
