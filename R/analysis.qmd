@@ -39,7 +39,7 @@ I plotted the cleaned data to a `scatterplot` of R to demonstrate the *correlati
 
 ![Simply find this illustration](asset/culmen_depth.png){width="300"}
 
-```{r, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(dplyr)
 library(ggplot2)
 
@@ -80,7 +80,7 @@ create_scatterplot(data, c("Adelie","Chinstrap", "Gentoo"), c("Torgersen","Dream
 
 Let's delve into the data to compare the differences among 3 species!
 
-```{r, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 #Compute the average bill length and bill depth per species
 #| layout-ncol: 2
 library(dplyr)
